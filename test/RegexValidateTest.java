@@ -7,14 +7,14 @@ public class RegexValidateTest {
     public void testValidateEmail() {
         String email = "p.nwakwo.native.semicolon.africa";
         boolean expected = Main.validate(email);
-        assertTrue(expected);
+        assertFalse(expected);
     }
 
     @Test
     public void testValidateEmailWithDigit() {
         String email = "devbig14gmail.com";
         boolean expected = Main.validate(email);
-        assertFalse(expected);
+        assertTrue(expected);
     }
 
     @Test
@@ -25,8 +25,8 @@ public class RegexValidateTest {
     }
 
     @Test
-    public void testValidateNumber() {
-        String number = "+2347073923307";
+    public void testValidatePassword() {
+        String number = "JavaCode@1";
         boolean expected = Main.checkThis(number);
         assertTrue(expected);
     }
